@@ -18,7 +18,7 @@ login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
 app.config['SECRET_KEY'] = 'dev'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://bcjrmszwukoaov:908980c9d57498e34d15cde857459304e0505dda916ca9429fdbdfe2502573d8@ec2-23-23-182-238.compute-1.amazonaws.com:5432/dtf2ujo6lplnf'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bcjrmszwukoaov:908980c9d57498e34d15cde857459304e0505dda916ca9429fdbdfe2502573d8@ec2-23-23-182-238.compute-1.amazonaws.com:5432/dtf2ujo6lplnf'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'prefix + os.path.join(app.root_path, 'data.db')'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # 關閉對模型修改的監控
 
