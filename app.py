@@ -7,12 +7,6 @@ import os
 import sys
 import click
 
-WIN = sys.platform.startswith('win')
-if WIN:  # 如果是 Windows 系统，使用三個斜槓
-    prefix = 'sqlite:///'
-else:  # 否則使用四個斜槓
-    prefix = 'sqlite:////'
-
 app = Flask(__name__)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
